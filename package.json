@@ -1,0 +1,12 @@
+{
+  "name": "mahjong-platform",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "type": "module",
+  "scripts": {
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "bench": "pnpm --filter @mahjong/engine bench",
+    "oracle": "node tools/oracle/run.mjs"
+  }
+}

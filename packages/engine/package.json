@@ -1,0 +1,24 @@
+{
+  "name": "@mahjong/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run --exclude test/oracle.test.ts",
+    "test:oracle": "vitest run test/oracle.test.ts",
+    "bench": "vitest bench --run --outputJson bench/results.json",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.test.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "fast-check": "^4",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^3"
+  }
+}
